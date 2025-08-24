@@ -14,7 +14,7 @@ erDiagram
     PRODUCTOS {
         int id PK
         varchar nombre
-        text descripcion
+        varchar descripcion
         decimal precio
         int stock
         varchar categoria
@@ -68,7 +68,7 @@ erDiagram
         int usuario_id FK
         int producto_id FK
         int puntuacion
-        text comentario
+        varchar comentario
         datetime fecha_creacion
     }
     
