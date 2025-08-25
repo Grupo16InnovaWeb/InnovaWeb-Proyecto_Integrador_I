@@ -1,0 +1,118 @@
+erDiagram
+ /* ENTIDADES PRINCIPALES */
+    USUARIOS {
+        int id PK
+        varchar nombre
+        varchar email UK
+        varchar password
+        varchar rol
+        datetime fecha_creacion
+        datetime ultimo_login
+        boolean activo
+    }
+    
+    PRODUCTOS {
+        int id PK
+        varchar nombre
+        varchar descripcion
+        decimal precio
+        int stock
+        varchar categoria
+        varchar imagen_url
+        boolean activo
+        datetime fecha_creacion
+    }
+    
+    PEDIDOS {
+        int id PK
+        int usuario_id FK
+        decimal total
+        varchar estado
+        varchar direccion_envio
+        datetime fecha_creacion
+        datetime fecha_actualizacion
+    }
+    
+    DETALLE_PEDIDOS {
+        int id PK
+        int pedido_id FK
+        int producto_id FK
+        int cantidad
+        decimal precio_unitario
+        decimal subtotal
+    }
+    
+    CATEGORIAS {
+        int id PK
+        varchar nombre
+        varchar descripcion
+    }
+    
+    /* RELACIONES */
+    USUARIOS ||--o{ PEDIDOS : realiza
+    PEDIDOS ||--|{ DETALLE_PEDIDOS : contiene
+    PRODUCTOS }o--o{ DETALLE_PEDIDOS : incluido_en
+    CATEGORIAS ||--o{ PRODUCTOS : clasifica
+    
+    /* TABLAS ADICIONALES PARA FUNCIONALIDADES PLANEADAS */
+    CARRITO {
+        int usuario_id FK
+        int producto_id FK
+        int cantidad
+        datetime fecha_agregado
+    }
+    
+    VALORACIONES {
+        int usuario_id FK
+        int producto_id FK
+        int puntuacion
+        varchar comentario
+        datetime fecha_creacion
+    }
+    
+    PAGOS {
+        int id PK
+        int pedido_id FK
+        decimal monto
+        varchar metodo_pago
+        varchar estado
+        varchar transaccion_id
+        datetime fecha_pago
+    }
+    
+    /* RELACIONES ADICIONALES */
+    USUARIOS ||--o{ CARRITO : tiene
+    PRODUCTOS }o--o{ CARRITO : agregado_en
+    USUARIOS ||--o{ VALORACIONES : escribe
+    PRODUCTOS }o--o{ VALORACIONES : recibidas_en
+    PEDIDOS ||--|| PAGOS : procesa
+
+📋 Descripción de las Entidades:
+
+Tablas Principales:
+USUARIOS: Gestión de clientes y administradores
+
+PRODUCTOS: Catálogo completo de productos
+
+PEDIDOS: Registro de órdenes de compra
+
+DETALLE_PEDIDOS: Items específicos de cada pedido
+
+CATEGORIAS: Organización de productos
+
+Tablas de Soporte:
+CARRITO: Gestión temporal de compras
+
+VALORACIONES: Sistema de reseñas y puntuaciones
+
+PAGOS: Registro de transacciones financieras
+
+🔗 Cardinalidades:
+USUARIOS → PEDIDOS: Uno a Muchos (1:N)
+
+PEDIDOS → DETALLE_PEDIDOS: Uno a Muchos (1:N)
+
+PRODUCTOS → DETALLE_PEDIDOS: Muchos a Muchos (N:M)
+
+CATEGORIAS → PRODUCTOS: Uno a Muchos (1:N)
+
