@@ -1,1 +1,5 @@
-Primer aporte de Marianela
+Registro de mi aporte al proyecto InnovaWeb:
+- Colaboración en la plantilla de Historias de Usuario.
+- Agregué comentarios sobre las historias.
+- Identificar posibles errores o inconsistencias en las tareas asignadas. 
+- Pendiente de completar el resto con el equipo.
