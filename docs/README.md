@@ -16,7 +16,7 @@ Convenciones:
 Backend
 Contiene la lógica de negocio y gestión de datos:
 - sql/ → scripts SQL de creación de tablas, relaciones y datos de prueba.  
-- src/ → código fuente del backend (modelos, controladores, servicios).  
+
 
 Convenciones:
 - Scripts SQL numerados según orden de ejecución (`01-create-tables.sql`, `02-insert-data.sql`).  
