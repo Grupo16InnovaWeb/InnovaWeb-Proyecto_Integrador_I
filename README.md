@@ -1,133 +1,103 @@
-# 🛒 Anteproyecto: E-Commerce InnovaWeb
+# 🛒 **E-Commerce InnovaWeb**
 
-[![Estado](https://img.shields.io/badge/Estado-Anteproyecto%20Planeación-blue)]()
-[![Fase](https://img.shields.io/badge/Fase-Documentación%20Inicial-lightgrey)]()
-[![Tipo](https://img.shields.io/badge/Tipo-Propuesta%20Técnica-orange)]()
+**Estado:** Anteproyecto  
+**Tipo:** Documento de planificación  
 
-**Documento de planificación** para el desarrollo de una plataforma de comercio electrónico completa. Este anteproyecto describe la arquitectura propuesta, funcionalidades planeadas y estructura general del sistema.
-
-## 📋 Objetivo del Proyecto
-
-Desarrollar una plataforma de e-commerce escalable que permita:
-- Experiencia de compra intuitiva y segura para usuarios finales
-- Herramientas robustas de gestión para administradores
-- Sistema modular y escalable para futuras expansiones
-- Infraestructura técnica sólida y mantenible
-
-## ✨ Funcionalidades Planeadas
-
-### 🛍️ Catálogo de Productos (Propuesto)
-- ✅ Visualización de productos con galería de imágenes
-- ✅ Sistema de búsqueda y filtros avanzados
-- ✅ Valoraciones y reseñas de usuarios
-- ✅ Gestión de inventario en tiempo real
-
-### 👥 Gestión de Usuarios (Propuesto)
-- ✅ Sistema de autenticación dual (clientes/administradores)
-- ✅ Registro con validación de datos segura
-- ✅ Perfiles personalizables con historial
-- ✅ Sistema de roles y permisos escalable
-
-### 🛒 Carrito de Compras (Propuesto)
-- ✅ Gestión de items con persistencia de sesión
-- ✅ Cálculo automático de totales e impuestos
-- ✅ Múltiples opciones de envío y entrega
-- ✅ Integración con pasarelas de pago
-
-### 💳 Sistema de Pagos (Propuesto)
-- ✅ Pasarelas de pago múltiples
-- ✅ Proceso de checkout optimizado
-- ✅ Confirmaciones automáticas por email/SMS
-- ✅ Seguimiento de órdenes integrado
-
-## 🏗️ Arquitectura Propuesta
-
-### 🧩 Diagrama de Clases (Planificado)
-
-### 🗃️ Modelo de Datos (Propuesto)
-- ✅ Base de datos relacional normalizada
-- ✅ Esquema optimizado para transacciones e-commerce
-- ✅ Integridad referencial y backups automáticos
-- ✅ Modelo escalable para futuras funcionalidades
-
-## 📊 Fases de Desarrollo Planeadas
-
-### Fase 1: Definición y Planificación
-- [ ] Documentación completa de requisitos
-- [ ] Diseño de arquitectura técnica
-- [ ] Definición de stack tecnológico
-- [ ] Plan de testing y calidad
-
-### Fase 2: Desarrollo Core
-- [ ] Módulo de autenticación y usuarios
-- [ ] Sistema de catálogo de productos
-- [ ] Carrito de compras básico
-- [ ] Panel de administración inicial
-
-### Fase 3: Funcionalidades Avanzadas
-- [ ] Sistema de pagos integrado
-- [ ] Pasarelas de pago múltiples
-- [ ] Sistema de logística y envíos
-- [ ] Reportes y analytics
-
-### Fase 4: Lanzamiento y Escalamiento
-- [ ] Testing de carga y performance
-- [ ] Implementación de seguridad avanzada
-- [ ] Plan de go-live controlado
-- [ ] Monitorización continua
-
-## 🔐 Consideraciones de Seguridad (Planificado)
-
-- ✅ Encriptación de datos sensibles
-- ✅ Protección contra fraudes y vulnerabilidades
-- ✅ Cumplimiento de regulaciones de privacidad
-- ✅ Protocolos de seguridad actualizados
-
-## 📅 Cronograma Propuesto
-
-| Fase | Duración Estimada | Entregables |
-|------|-------------------|-------------|
-| **Planificación** | 2-3 semanas | Documentación completa |
-| **Desarrollo Core** | 8-10 semanas | MVP funcional |
-| **Funcionalidades Avanzadas** | 6-8 semanas | Sistema completo |
-| **Testing y Lanzamiento** | 2-3 semanas | Plataforma stable |
-
-## 👥 Integrantes del Proyecto
-
-| Nombre | Rol en el Proyecto |
-|--------|---------------------|
-| Acosta Johana Vanessa | Milestone / IEE830 / DER |
-| Andreoli Fernando Daniel | DER |
-| Crespin Marianela Jenifer | clase |
-| Molina Ricardo Alberto | Readme / DER |
-| Molina Laura | IEE830 |
-| Tello Adrian Nicolas | Readme |
-
-## 📈 Métricas de Éxito Propuestas
-
-- ✅ Tiempo de carga menor a 2 segundos
-- ✅ 99.9% de disponibilidad en producción
-- ✅ Escalabilidad automática bajo carga
-- ✅ Experiencia de usuario satisfactoria
-
-## 💡 Próximos Pasos Inmediatos
-
-1. **Definición final** de stack tecnológico
-2. **Prototipado** de interfaces clave
-3. **Setup** de entornos de desarrollo
-4. **Plan detallado** de sprints development
+Plataforma de comercio electrónico completa y escalable, diseñada para ofrecer una **experiencia de compra intuitiva** y herramientas robustas de **gestión administrativa**, con un enfoque modular, seguro y adaptable al crecimiento futuro.
+Buscamos sintetizar y optimizar las ventas de los negocios de barrio como almacenes, bares, etc.
+Dónde van a poder controlar el stock de entrada y salida de sus productos, ingresos y egresos, etc.
 
 ---
 
-## ⚠️ Estado Actual del Proyecto
+## 🎯 **Objetivo del Proyecto**
 
-**Este es un documento de anteproyecto** - Todas las funcionalidades descritas están en fase de planificación y serán implementadas según el cronograma propuesto. No existe código desarrollado en este momento.
+Desarrollar una plataforma de **e-commerce escalable y segura**, que brinde:
+
+- Experiencia de usuario fluida y atractiva.  
+- Gestión eficiente de productos, usuarios y órdenes.  
+- Infraestructura técnica mantenible y modular.  
 
 ---
 
-**¡Propuesta de valor innovadora en desarrollo!** 🎉
+## ✨ **Principales Funcionalidades**
 
-*Documento de anteproyecto - InnovaWeb Team - Versión 1.0*
+### 🛍️ Catálogo de Productos  
+- Visualización con galería de imágenes.  
+- Filtros avanzados y búsqueda dinámica.  
+- Valoraciones y reseñas de usuarios.  
+- Gestión de inventario en tiempo real.  
+
+### 👥 Gestión de Usuarios  
+- Autenticación segura (clientes y administradores).  
+- Registro validado y perfiles personalizados.  
+- Roles y permisos escalables.  
+
+### 🛒 Carrito y Pagos  
+- Persistencia de sesión y cálculo automático.  
+- Integración con pasarelas de pago.  
+- Confirmaciones automáticas y seguimiento de pedidos.  
+
+---
+
+## 🏗️ **Arquitectura y Modelo de Datos**
+
+- **Diagrama de Clases:** en planificación.  
+- **Modelo Relacional:** base de datos normalizada y optimizada para transacciones.  
+- **Integridad referencial** y estructura escalable.  
+
+---
+
+## 📊 **Fases de Desarrollo**
+
+1. **Fase 1 – Planificación:** documentación, stack y arquitectura.  
+2. **Fase 2 – Desarrollo Core:** módulos de usuarios, catálogo y carrito.  
+3. **Fase 3 – Funcionalidades Avanzadas:** pagos, logística y reportes.  
+4. **Fase 4 – Lanzamiento:** testing, seguridad y monitoreo.  
+
+📌 *Las fases detalladas y su cronograma están ampliadas en la [Wiki del proyecto](../../wiki).*  
+
+---
+
+## 🔐 **Seguridad**
+
+- Encriptación de datos sensibles.  
+- Protección contra fraudes y vulnerabilidades.  
+- Cumplimiento de regulaciones de privacidad.  
+
+---
+
+## 👥 **Equipo de Desarrollo**
+
+| Integrante | Rol |
+|-------------|------|
+| **Acosta Johana Vanessa** | Milestone / IEEE830 / DER |
+| **Andreoli Fernando Daniel** | DER |
+| **Crespin Marianela Jenifer** | Diagrama de Clases |
+| **Molina Ricardo Alberto** | Readme / DER |
+| **Molina Laura** | IEEE830 |
+| **Tello Adrian Nicolas** | Readme |
+
+---
+
+## 📈 **Métricas de Éxito**
+
+- Tiempo de carga < **2 segundos**  
+- **99.9%** de disponibilidad en producción  
+- Escalabilidad y experiencia de usuario óptimas  
+
+---
+
+## 🚀 **Próximos Pasos**
+
+- Definición final del stack tecnológico  
+- Prototipado de interfaces clave  
+- Configuración de entornos de desarrollo  
+- Plan detallado de sprints  
+
+---
+
+📄 *Versión 1.0 – Documento de Anteproyecto*  
+📘 *Detalles técnicos, diagramas y cronogramas disponibles en la [Wiki del proyecto](../../wiki).*  
 
 ## 📊 Diagramas
 
