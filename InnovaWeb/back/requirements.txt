@@ -1,3 +1,0 @@
-SQLAlchemy>=1.4
-pymysql
-passlib[bcrypt]
