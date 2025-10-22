@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InnovaWeb | Productos</title>
   <link rel="icon" href="favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos propios -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -27,50 +28,93 @@
     </div>
   </nav>
 
+  <!-- Sección Productos -->
   <section class="container py-5">
     <h2 class="text-center text-primary mb-4">Nuestros Productos</h2>
     <div class="row g-4">
+      
+      <!-- Producto 1 -->
       <div class="col-md-3">
-        <div class="card h-100 shadow-sm">
-          <img src="img/Branding Pers.png" class="card-img-top" alt="Branding">
+        <div class="card h-100 shadow-sm d-flex flex-column">
+          <img src="img/Branding Pers.png" class="card-img-top" alt="Branding y Diseño Web Personalizado" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Branding y Diseño Web Personalizado</h5>
             <p class="card-text">Servicio integral de identidad visual y diseño web a medida.</p>
           </div>
+          <div class="card-footer bg-white border-0 text-center mt-auto">
+            <button class="btn btn-primary request-info" data-product="Branding y Diseño Web Personalizado">Solicitar información</button>
+          </div>
         </div>
       </div>
+
+      <!-- Producto 2 -->
       <div class="col-md-3">
-        <div class="card h-100 shadow-sm">
-          <img src="img/Catalogo_Digital.png" class="card-img-top" alt="Catálogo">
+        <div class="card h-100 shadow-sm d-flex flex-column">
+          <img src="img/Catalogo_Digital.png" class="card-img-top" alt="Catálogo Digital de Productos" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Catálogo Digital de Productos</h5>
             <p class="card-text">Desarrollo de un catálogo online para mostrar tus productos sin necesidad de venta directa.</p>
           </div>
+          <div class="card-footer bg-white border-0 text-center mt-auto">
+            <button class="btn btn-primary request-info" data-product="Catálogo Digital de Productos">Solicitar información</button>
+          </div>
         </div>
       </div>
+
+      <!-- Producto 3 -->
       <div class="col-md-3">
-        <div class="card h-100 shadow-sm">
-          <img src="img/Sitio_Web.png" class="card-img-top" alt="Sitio Web">
+        <div class="card h-100 shadow-sm d-flex flex-column">
+          <img src="img/Sitio_Web.png" class="card-img-top" alt="Sitio Web Institucional Profesional" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Sitio Web Institucional Profesional</h5>
             <p class="card-text">Creación de un sitio web institucional para empresas o proyectos que buscan presencia online.</p>
           </div>
+          <div class="card-footer bg-white border-0 text-center mt-auto">
+            <button class="btn btn-primary request-info" data-product="Sitio Web Institucional Profesional">Solicitar información</button>
+          </div>
         </div>
       </div>
+
+      <!-- Producto 4 -->
       <div class="col-md-3">
-        <div class="card h-100 shadow-sm">
-          <img src="img/Tienda_Online.png" class="card-img-top" alt="Tienda Online">
+        <div class="card h-100 shadow-sm d-flex flex-column">
+          <img src="img/Tienda_Online.png" class="card-img-top" alt="Tienda Online Autogestionable" loading="lazy">
           <div class="card-body text-center">
             <h5 class="card-title">Tienda Online Autogestionable</h5>
             <p class="card-text">Diseño y desarrollo de una tienda online completa con WooCommerce.</p>
           </div>
+          <div class="card-footer bg-white border-0 text-center mt-auto">
+            <button class="btn btn-primary request-info" data-product="Tienda Online Autogestionable">Solicitar información</button>
+          </div>
         </div>
       </div>
-    </div>
+
+    </div> <!-- cierre row -->
   </section>
 
+  <!-- Footer -->
   <footer class="bg-light text-center py-3 border-top">
     <p class="mb-0 text-secondary">&copy; 2025 InnovaWeb</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-x9T5J8Q3+G5B9Q6B5L2N1F7C9D1F7A2L4Q8E1P6R3S4A2" crossorigin="anonymous"></script>
+
+  <!-- Script para botones Solicitar Información -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.request-info').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const product = encodeURIComponent(btn.dataset.product || '');
+          const isLogged = !!localStorage.getItem('userToken');
+          if (isLogged) {
+            window.location.href = 'contacto.html?product=' + product;
+          } else {
+            window.location.href = 'registro.html?redirect=contacto&product=' + product;
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
