@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
 CREATE TABLE IF NOT EXISTS categorias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
-    descripcion TEXT,
+    descripcion VARCHAR(200),
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS categorias (
 CREATE TABLE IF NOT EXISTS productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(200) NOT NULL,
-    descripcion TEXT,
+    descripcion VARCHAR(200),
     precio DECIMAL(10,2) NOT NULL,
     stock INT NOT NULL DEFAULT 0,
     categoria_id INT,
