@@ -36,6 +36,15 @@
     .funcionalidad h3 {
       margin-top: 0;
     }
+
+    /* Estilo para la sección de usuario */
+    .user-status {
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #e9ecef;
+      margin: 20px 0;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -75,6 +84,19 @@
       </div>
     </div>
   </nav>
+
+  <!-- Sección Pantalla según usuario logueado -->
+  <section id="user-screen" class="container py-5">
+    <div id="logged-in" class="user-status" style="display: none;">
+      <h2 class="text-primary">Bienvenido, usuario</h2>
+      <p>Ahora puedes acceder a todas las funcionalidades de la web.</p>
+    </div>
+
+    <div id="not-logged-in" class="user-status" style="display: none;">
+      <h2 class="text-warning">¡Hola!</h2>
+      <p>Debes iniciar sesión para acceder a esta sección.</p>
+    </div>
+  </section>
 
   <!-- Nuestra Historia -->
   <section class="container py-5">
@@ -125,6 +147,18 @@
   <footer class="bg-light text-center py-3 border-top">
     <p class="mb-0 text-secondary">&copy; 2025 InnovaWeb</p>
   </footer>
+
+  <!-- Script para mostrar pantalla según estado del usuario -->
+  <script>
+    // Simulación: cambiar a true para probar usuario logueado
+    let userLoggedIn = false;
+
+    if(userLoggedIn){
+      document.getElementById('logged-in').style.display = 'block';
+    } else {
+      document.getElementById('not-logged-in').style.display = 'block';
+    }
+  </script>
 
 </body>
 </html>
